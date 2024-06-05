@@ -3,7 +3,7 @@ import React from 'react';
 import TaskItem from './TaskItem';
 
 function TaskList({ tasks, onTaskComplete, onTaskDelete }) {
-  if (!tasks.length) {
+  if (!tasks.length) { 
     return <p className="text-center">No tasks available</p>;
   }
 

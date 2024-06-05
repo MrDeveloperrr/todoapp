@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: url('/bgtask.png') no-repeat;
+  background: url('') no-repeat;
   background-size: cover;
   
 }

@@ -24,7 +24,7 @@ function ViewTasks() {
     fetch(req)
       .then(res => res.json())
       .then(data => {
-        console.log(data.length)
+        console.log(data)
         setTasks(data)
         // setFilteredBooks(data)
       })

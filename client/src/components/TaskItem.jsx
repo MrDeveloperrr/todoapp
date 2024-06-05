@@ -1,4 +1,4 @@
-// src/components/TaskItem.jsx
+
 import React from 'react';
 import TaskList from './TaskList';
 import ViewTasks from './ViewTasks';
@@ -15,10 +15,9 @@ function TaskItem({ task,  onTaskComplete, onTaskDelete }) {
 
   return (
     <div className="task-item p-4 border border-gray-300 rounded mb-4">
-      <h3 className="text-xl font-bold">{task.title}</h3>
+      <h3 className="text-xl font-bold">{task.owner}</h3>
       <p>{task.description}</p>
-      <p>Task's: {""}</p>
-      <p>Details: {""}</p>
+      <p className="text-xl font-bold">Task at hand: {task.task}</p>
       <p>Due: {new Date(task.dueDate).toLocaleDateString()}</p>
       <p>Status: {task.completed ? 'Completed' : 'To be completed'}</p>
       <button 
